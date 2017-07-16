@@ -14,6 +14,7 @@
             var faster, slower;
             var equal = false;
             var results = {
+                equallyFast: false,
                 iterations: {},
                 fasterFunction: {
                     name: "",

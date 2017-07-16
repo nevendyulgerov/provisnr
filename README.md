@@ -141,7 +141,7 @@ Compare the speed of two async functions. The functions must be provided in a ca
 ```javascript
 // example data provided
 {
-	equallyFast: true,
+	equallyFast: true, // available only when the two functions have equal number of achieved iterations
 	fasterFunction: {
 		fasterInPercentage: 35 // number equal to the performance boost of the faster function in percentage (integer) 
 		name: myFunc // name of the faster function (string)

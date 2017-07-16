@@ -86,6 +86,7 @@
             var type = args.type;
             var generator = args.generator || function() {};
             var timeout = args.timeout;
+            var complete = args.complete;
             var callbacks = args.callbacks;
             var keys = Object.keys(callbacks);
             var funcAName = keys[0];
@@ -121,12 +122,12 @@
                         resultA.iterations = iterationsA;
 
                         base.testAsyncFunction({
-                            timeout: args.timeout,
+                            timeout: timeout,
                             generator: generator,
                             callback: callbacks[funcBName],
                             complete: function(iterationsB) {
                                 resultB.iterations = iterationsB;
-                                return args.complete(base.collectResults(resultA, resultB));
+                                return complete(base.collectResults(resultA, resultB));
                             }
                         });
                     }

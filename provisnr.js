@@ -1,7 +1,7 @@
 
 /**
  * Provisnr JavaScript Library
- * Performance testing library
+ * Provides performance-testing methods
  * v2.2.4
  *
  * Released under the MIT license

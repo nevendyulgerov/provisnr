@@ -136,7 +136,9 @@ $(document).ready(function() {
 });
 ```
 
-Compare the speed of two async functions. The functions must be provided in a callbacks object. The results are passed as parameter to the complete function. The returned data is an object with the following schema:
+Compare the speed of two async functions. The functions must be provided in a callbacks object. We are not using a generator here, because the two tested callbacks use different data.
+ 
+ The results are passed as parameter to the complete function. The returned data is an object with the following schema:
 
 ```javascript
 // example data provided

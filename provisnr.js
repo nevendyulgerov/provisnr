@@ -1,9 +1,10 @@
 
 /**
  * Provisnr JavaScript Library
- * Provides performance-testing methods
- * v2.2.4
+ * v1.0.0
  *
+ * Provides performance-testing methods
+ * Author: Neven Dyulgerov
  * Released under the MIT license
  */
 
@@ -23,7 +24,7 @@
                 }
             };
 
-            if ( a.iterations > a.iterations ) {
+            if ( a.iterations > b.iterations ) {
                 faster = a;
                 slower = b;
             } else if ( a.iterations < b.iterations) {

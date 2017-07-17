@@ -44,10 +44,12 @@ var myDataGenerator = function() {
 // test a function procedurally
 // capture the number of achieved iterations for myFunc, with data passed by dataGenerator
 
+// @param type         {optional} {string}    - can be either "procedural" or "async", if you do not pass type, provisnr assumes you want "async"
 // @param timeout      {required} {integer}   - time duration for the test in milliseconds
 // @param generator    {optional} {function}  - data generator which passes data to tested function
 // @param callback     {required} {function}  - the function which will be tested
-var iterations = provisnr.testProceFunction({
+var iterations = provisnr.testFunction({
+    type: "procedural",
 	timeout: 1000,
 	generator: myDataGenerator,
 	callback: myFunc

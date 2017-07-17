@@ -150,12 +150,12 @@ Compare the speed of two async functions. The functions must be provided in a ca
 	equallyFast: true, // boolean flag, notifying whether the two functions have achieved equal number of iterations
 	fasterFunction: {
 	    fasterInIterations: 100 // number equal to the performance boost of the faster function in iterations (integer)
-		fasterInPercentage: 35 // number equal to the performance boost of the faster function in percentage (integer) 
-		name: myFunc // name of the faster function (string)
+        fasterInPercentage: 35 // number equal to the performance boost of the faster function in percentage (integer)
+        name: myFunc // name of the faster function (string)
 	},
 	iterations: {
-		funcA: 1500 // number of achieved iterations (integer)
-		funcB: 2000 // number of achieved iterations (integer)
+        funcA: 1500 // number of achieved iterations (integer)
+        funcB: 2000 // number of achieved iterations (integer)
 	}
 }
 ```

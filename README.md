@@ -50,9 +50,9 @@ var myDataGenerator = function() {
 // @param callback     {required} {function}  - the function which will be tested
 var iterations = provisnr.testFunction({
     type: "procedural",
-	timeout: 1000,
-	generator: myDataGenerator,
-	callback: myFunc
+    timeout: 1000,
+    generator: myDataGenerator,
+    callback: myFunc
 });
 ```
 
@@ -149,6 +149,7 @@ Compare the speed of two async functions. The functions must be provided in a ca
 {
 	equallyFast: true, // boolean flag, notifying whether the two functions have achieved equal number of iterations
 	fasterFunction: {
+	    fasterInIterations: 100 // number equal to the performance boost of the faster function in iterations (integer)
 		fasterInPercentage: 35 // number equal to the performance boost of the faster function in percentage (integer) 
 		name: myFunc // name of the faster function (string)
 	},

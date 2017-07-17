@@ -77,12 +77,14 @@ $(document).ready(function() {
 
     // test a function asynchronously
     // capture the number of achieved iterations for getGhibliFilms, with data passed by getGhibliOptions
-    
+
+    // @param type         {optional} {string}    - can be either "procedural" or "async", if you do not pass type, provisnr assumes you want "async"
     // @param timeout      {required} {integer}   - time duration for the test in milliseconds
     // @param generator    {optional} {function}  - data generator which passes data to tested function
     // @param callback     {required} {function}  - the function which will be tested
     // @param complete     {required} {function}  - the complete callback, which receives the number of achieved iterations as a parameter
-    provisnr.testAsyncFunction({
+    provisnr.testFunction({
+        type: "async",
         timeout: 1000,
         generator: getGhibliOptions,
         callback: getGhibliFilms,
